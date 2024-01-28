@@ -24,7 +24,7 @@ namespace Homework2
             Console.WriteLine("Final notunu giriniz:");
             ogr1.final = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine(string.Format("{0} nolu öğrencinin ortalaması: {1}", ogr1.OgrenciNumarasi(), ogr1.OrtalamaBul()));
+            Console.WriteLine(string.Format("{0} nolu öğrencinin ortalaması: {1}, Harf notu: {2}", ogr1.OgrenciNumarasi(), ogr1.OrtalamaBul(), ogr1.HarfNotuBul()));
 
 
 

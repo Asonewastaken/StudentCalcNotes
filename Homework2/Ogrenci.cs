@@ -39,5 +39,38 @@ namespace Homework2
 
             return ortalama;
         }
+
+        public string HarfNotuBul()
+        {
+            double ort = OrtalamaBul();
+
+            if (ort >= 95)
+            {
+                return "A1";
+            }
+
+            if (ort >= 85 && ort <= 94)
+            {
+                return "A2";
+            }
+
+            if(ort >= 75 && ort <= 84)
+            {
+                return "A3";
+            }
+
+            if (ort >= 65 && ort <= 74)
+            {
+                return "B1";
+            }
+            if (ort >= 55 && ort <= 64)
+            {
+                return "B2";
+            }
+            
+            //TODO YAPILACAK DİĞER HARF NOTLARI
+
+            return "FF";
+        }
     }
 }
