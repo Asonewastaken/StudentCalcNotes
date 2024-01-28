@@ -44,7 +44,7 @@ namespace Homework2
         {
             double ort = OrtalamaBul();
 
-            if (ort >= 95)
+            if (ort >= 95 )
             {
                 return "A1";
             }
@@ -63,12 +63,31 @@ namespace Homework2
             {
                 return "B1";
             }
+
             if (ort >= 55 && ort <= 64)
             {
                 return "B2";
             }
-            
-            //TODO YAPILACAK DİĞER HARF NOTLARI
+
+            if (ort >= 45 && ort <= 54)
+            {
+                return "B3";
+            }
+
+            if (ort >= 35 && ort <= 44)
+            {
+                return "C1";
+            }
+
+            if (ort >= 25 && ort <= 34)
+            {
+                return "C2";
+            }
+
+            if (ort >= 15 && ort <= 24)
+            {
+                return "D1 - Şartlı Geçer";
+            }
 
             return "FF";
         }

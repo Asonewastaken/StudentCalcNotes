@@ -16,15 +16,18 @@ namespace Homework2
 
             Ogrenci ogr1 = new Ogrenci(studentNumber);
 
-            Console.WriteLine("Vize notunu giriniz:");
+            Console.Write("Vize notunu giriniz: ");
 
 
             ogr1.vize = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Final notunu giriniz:");
+            Console.Write("Final notunu giriniz: ");
             ogr1.final = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine(string.Format("{0} nolu öğrencinin ortalaması: {1}, Harf notu: {2}", ogr1.OgrenciNumarasi(), ogr1.OrtalamaBul(), ogr1.HarfNotuBul()));
+            Console.WriteLine(string.Format("{0} nolu öğrencinin ortalaması: {1} Harf notu: {2}",
+                                             ogr1.OgrenciNumarasi(),
+                                             ogr1.OrtalamaBul(),
+                                             ogr1.HarfNotuBul()));
 
 
 
